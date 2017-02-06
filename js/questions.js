@@ -37,7 +37,7 @@ function gestionarXml(dadesXml){
  //NUMBER
  //Recuperamos el título y la respuesta correcta de Input, guardamos el número secreto
  var tituloInput=xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
- ponerDatosInputHtml(tituloInput);
+ ponerDatosInputHtml(textDiv);
  numeroSecreto=parseInt(xmlDoc.getElementsByTagName("answer")[0].childNodes[0].nodeValue);
  
  //TEXT 1 
@@ -50,21 +50,35 @@ function gestionarXml(dadesXml){
  //Recuperamos el título y la respuesta correcta de Input, guardamos el número secreto
  var tituloSelect=xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
  ponerDatosInputHtml(textDiv1);
- numeroSecreto=parseInt(xmlDoc.getElementsByTagName("answer")[0].childNodes[0].nodeValue);
+ numeroSecreto=parseInt(xmlDoc.getElementsByTagName("answer")[2].childNodes[0].nodeValue);
  
  
  
  //SELECT
  //Recuperamos el título y las opciones, guardamos la respuesta correcta
- var tituloSelect=xmlDoc.getElementsByTagName("title")[1].childNodes[0].nodeValue;
+ var tituloSelect=xmlDoc.getElementsByTagName("title")[2].childNodes[0].nodeValue;
  var opcionesSelect = [];
  var nopt = xmlDoc.getElementById("bodatoda005").getElementsByTagName('option').length;
   for (i = 0; i < nopt; i++) { 
     opcionesSelect[i] = xmlDoc.getElementById("bodatoda005").getElementsByTagName('option')[i].childNodes[0].nodeValue;
  }
  ponerDatosSelectHtml(tituloSelect,opcionesSelect);
- respuestaSelect=parseInt(xmlDoc.getElementsByTagName("answer")[1].childNodes[0].nodeValue);
+ respuestaSelect=parseInt(xmlDoc.getElementsByTagName("answer")[0].childNodes[0].nodeValue);
 
+ //SELECT
+ //Recuperamos el título y las opciones, guardamos la respuesta correcta
+ var tituloSelect=xmlDoc.getElementsByTagName("title")[2].childNodes[0].nodeValue;
+ var opcionesSelect = [];
+ var nopt = xmlDoc.getElementById("bodatoda005").getElementsByTagName('option').length;
+  for (i = 0; i < nopt; i++) { 
+    opcionesSelect[i] = xmlDoc.getElementById("bodatoda005").getElementsByTagName('option')[i].childNodes[0].nodeValue;
+ }
+ ponerDatosSelectHtml(tituloSelect,opcionesSelect);
+ respuestaSelect=parseInt(xmlDoc.getElementsByTagName("answer")[0].childNodes[0].nodeValue);
+
+ 
+ 
+ 
  //CHECKBOX
  //Recuperamos el título y las opciones, guardamos las respuestas correctas
  var tituloCheckbox = xmlDoc.getElementsByTagName("title")[2].childNodes[0].nodeValue;
