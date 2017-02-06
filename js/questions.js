@@ -40,6 +40,20 @@ function gestionarXml(dadesXml){
  ponerDatosInputHtml(tituloInput);
  numeroSecreto=parseInt(xmlDoc.getElementsByTagName("answer")[0].childNodes[0].nodeValue);
  
+ //TEXT 1 
+ //Recuperamos el título y la respuesta correcta de Input, guardamos el número secreto
+ var tituloSelect=xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+ ponerDatosInputHtml(textDiv);
+ numeroSecreto=parseInt(xmlDoc.getElementsByTagName("answer")[0].childNodes[0].nodeValue);
+ 
+  //TEXT 2 
+ //Recuperamos el título y la respuesta correcta de Input, guardamos el número secreto
+ var tituloSelect=xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+ ponerDatosInputHtml(textDiv1);
+ numeroSecreto=parseInt(xmlDoc.getElementsByTagName("answer")[0].childNodes[0].nodeValue);
+ 
+ 
+ 
  //SELECT
  //Recuperamos el título y las opciones, guardamos la respuesta correcta
  var tituloSelect=xmlDoc.getElementsByTagName("title")[1].childNodes[0].nodeValue;
@@ -55,14 +69,14 @@ function gestionarXml(dadesXml){
  //Recuperamos el título y las opciones, guardamos las respuestas correctas
  var tituloCheckbox = xmlDoc.getElementsByTagName("title")[2].childNodes[0].nodeValue;
  var opcionesCheckbox = [];
- var nopt = xmlDoc.getElementById("bodatoda004").getElementsByTagName('option').length;
+ var nopt = xmlDoc.getElementById("bodatoda003").getElementsByTagName('option').length;
  for (i = 0; i < nopt; i++) { 
-    opcionesCheckbox[i]=xmlDoc.getElementById("bodatoda004").getElementsByTagName('option')[i].childNodes[0].nodeValue;
+    opcionesCheckbox[i]=xmlDoc.getElementById("bodatoda003").getElementsByTagName('option')[i].childNodes[0].nodeValue;
  }  
  ponerDatosCheckboxHtml(tituloCheckbox,opcionesCheckbox);
- var nres = xmlDoc.getElementById("bodatoda004").getElementsByTagName('answer').length;
+ var nres = xmlDoc.getElementById("bodatoda003").getElementsByTagName('answer').length;
  for (i = 0; i < nres; i++) { 
-  respuestasCheckbox[i]=xmlDoc.getElementById("bodatoda004").getElementsByTagName("answer")[i].childNodes[0].nodeValue;
+  respuestasCheckbox[i]=xmlDoc.getElementById("bodatoda003").getElementsByTagName("answer")[i].childNodes[0].nodeValue;
  }
 }
 
@@ -109,7 +123,7 @@ function corregirCheckbox(){
 //****************************************************************************************************
 // poner los datos recibios en el HTML
 function ponerDatosInputHtml(t){
- document.getElementById("tituloInput").innerHTML = t;
+ document.getElementById("textDiv").innerHTML = t;
 }
 
 function ponerDatosSelectHtml(t,opt){
