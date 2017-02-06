@@ -60,9 +60,9 @@ function gestionarXml(dadesXml){
     opcionesCheckbox[i]=xmlDoc.getElementById("bodatoda004").getElementsByTagName('option')[i].childNodes[0].nodeValue;
  }  
  ponerDatosCheckboxHtml(tituloCheckbox,opcionesCheckbox);
- var nres = xmlDoc.getElementById("profe_004").getElementsByTagName('answer').length;
+ var nres = xmlDoc.getElementById("bodatoda004").getElementsByTagName('answer').length;
  for (i = 0; i < nres; i++) { 
-  respuestasCheckbox[i]=xmlDoc.getElementById("profe_003").getElementsByTagName("answer")[i].childNodes[0].nodeValue;
+  respuestasCheckbox[i]=xmlDoc.getElementById("bodatoda004").getElementsByTagName("answer")[i].childNodes[0].nodeValue;
  }
 }
 
