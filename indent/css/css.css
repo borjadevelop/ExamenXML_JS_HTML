@@ -1,0 +1,310 @@
+body{
+	background-image: url("../img/fondomeme.jpg");
+	
+}
+
+#hidem,#showm{z-index:1;display:none;color: white;position:fixed;right:20%;left:75%;top:80%;font-size:25px;}
+
+
+
+.uni{
+	height: 40%;
+	width: 40%;
+}
+
+.tt{
+	font-size: 5vw;
+}
+
+.divdeForm{
+	left:15%;
+	right:15%;
+	width : 70%;
+	height : 80%;
+	display: none;
+	position: relative;
+	border: 2px solid #000000;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px #999999;
+	z-index: 1;
+	text-align: center;
+	top: 20%;
+	background-color: #FFDA5B;
+
+	}
+
+.wil1{
+	left:15%;
+	right:15%;
+	font-size: 20px;
+	text-align: center;
+	width : 70%;
+	height : 20%;
+	display: none;
+	position: relative;
+	border: 2px solid #000000;
+	border-radius: 5px;
+	z-index: 1;
+	text-align: center;
+	background-color: #FFDA5B;
+	font: 5em/0.25 Open Sans, Impact;
+    margin: 0;
+}
+
+
+
+.divdeForm{
+	left:15%;
+	right:15%;
+	width : 70%;
+	height : 80%;
+	display: none;
+	position: relative;
+	border: 2px solid #000000;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px #999999;
+	z-index: 1;
+	text-align: center;
+	top: 20%;
+	background-color: #FFDA5B;
+
+	}
+
+.divinfodentro{
+	display: none;
+	z-index: 50 ;
+	background-color: #FFDA5B;
+	border: 3px;
+	border-style: solid;
+	border-color:black ;
+	border-radius:10px;
+	width: 50% ;
+	height: 70%;
+	position : fixed;
+	top: 20%;
+	bottom: 20%;
+	left: 25%;
+	right: 25%;
+	color: black;
+	text-align: center;
+	font-family:Comic Sans;
+
+
+
+
+}
+
+
+h2{
+text-decoration: overline underline;
+font-family:Times, serif;
+bottom:1.5%;
+position: fixed;
+right: 1.5%;
+color: red;
+z-index: 1;
+}
+
+
+.wil2{
+
+	left:15%;
+	right:15%;
+	width : 70%;
+	height : 100%;
+	display: none;
+	position: fixed;
+	border: 2px solid #000000;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px #999999;
+	z-index: 3;
+	text-align: center;
+	top: 0.5%;
+	bottom: 0.5%;
+	background-color: #FFDA5B;
+
+	}
+
+}
+
+.infobot{
+	text-decoration: overline underline;
+font-family:Times, serif;
+bottom:1.5%;
+position: fixed;
+left: 1.5%;
+color: red;
+z-index: 1;
+}
+
+.botoninfo{
+
+	text-decoration: overline underline;
+font-family:Times, serif;
+bottom:1.5%;
+position: fixed;
+left: 1.5%;
+color: red;
+z-index: 1;
+
+
+}
+
+.divaboutdentro{
+	display: none;
+	z-index: 2 ;
+	background-color: #FFDA5B;
+	border: 3px;
+	border-style: solid ;
+	border-color:#FFDA5B ;
+	border-radius:10px;
+	width: 50% ;
+	height: 60%;
+	position : fixed;
+	top: 20%;
+	bottom: 20%;
+	left: 25%;
+	right: 25%;
+	color: black;
+	text-align: center;
+	font-family:Comic Sans;
+
+
+
+
+}
+
+.divabout {
+	display:none;
+	z-index: 1 ;
+	background-color: #FFDA5B;
+	border: 3px;
+	border-style: solid ;
+	border-color:black ;
+	border-radius:10px;
+	width: 60% ;
+	height: 70%;
+	position : fixed;
+	top: 15%;
+	bottom: 15%;
+	left: 20%;
+	right: 20%
+
+	
+
+
+
+}
+
+.banner1{
+	
+bottom:1.5%;
+position: fixed;
+right: 1.5%;
+color: red;
+z-index: 1;
+}
+
+.botoninfo{
+	
+bottom:1.5%;
+position: fixed;
+width: 20%;
+right: 1.5%;
+color: red;
+z-index: 1;
+}
+
+
+}
+.hidem{
+
+	z-index: 1;
+
+}
+
+
+
+svg {
+	
+    width: 100%;
+    height: 100%;
+  }
+  
+  .b-canvas {
+    fill: url(#p-xiao);
+    transform: translate(-60%,0); 
+    animation: yun 40s linear infinite;
+  }
+
+
+  @keyframes yun {
+    100% {
+      transform: translate(0%,0);
+    }
+  }
+
+
+
+
+
+
+ .panico {
+ 	top: 0%;
+	bottom: 0%;
+	left: 0%;
+	right: 0%;
+	overflow: hidden;
+	touch-action: none;
+	content-zooming: none;
+	user-select: none;
+	z-index: 1;
+}
+.panico  {
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	background: #6d6d6d;
+	width: 100%;
+	height: 100%;
+	cursor: default;
+
+}
+#button {
+	position:absolute;
+	left:50%;
+	top:50%;
+	width:250px;
+	height:250px;
+	margin-left:-125px;
+	margin-top:-125px;
+	transform-origin: center;
+}
+.inset {
+	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+	font-size: 32px;
+	padding: 40px 50px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #202020;
+	letter-spacing: .1em;
+	text-shadow: 
+	-1px -1px 1px #111, 
+	2px 2px 1px #363636;
+}
+
+
+.t1 {
+
+color: #ffffff;
+font-size: 14px;
+font-weight: 400;
+text-align: center;
+background: #889ccf;
+margin: 0 0 25px;
+padding: 5px;
+border-radius: 20px 20px 20px 20px;
+border: 2px solid #5878ca;
+
+}
+
