@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?> 
-<!DOCTYPE questions SYSTEM "dtd.dtd">
+
+<?xml-stylesheet type="text/xsl" href="preguntas.xsl"?>
 
 <questions>
 	
